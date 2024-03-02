@@ -21,7 +21,6 @@ try:
 
     # check if Page Loads Completely
     driver.execute_script("window.scrollBy(0,17000)", "")
-    # driver.execute_script("window.scrollTo(0,document.body.scrollHeight);")
     pageLoadText = driver.find_element(By.CSS_SELECTOR, "#srp-ipp-label-text").text
     assert 'Items Per' in pageLoadText
 
